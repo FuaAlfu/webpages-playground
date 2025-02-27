@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Audio Player </title>
+  <link rel="stylesheet" href="./public/style.css">
+</head>
+<body>
+  <div class="audio-player">
+    <h1 class="title">Stylish Audio Player</h1>
+    <div class="player-container">
+      <img src="https://via.placeholder.com/150" alt="Album Cover" class="album-cover">
+      <div class="controls">
+        <button id="prev" class="control-btn">&#10094;</button>
+        <button id="play" class="control-btn play-btn">&#9658;</button>
+        <button id="next" class="control-btn">&#10095;</button>
+      </div>
+      <div class="progress-container">
+        <input type="range" min="0" max="100" value="0" class="progress-bar" id="progressBar">
+      </div>
+      <p class="song-title">Song Title - Artist Name</p>
+    </div>
+  </div>
+
+  <audio id="audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
